@@ -5,8 +5,8 @@ import Dashboard from "./Dashboard";
 import Footer from "./Footer";
 import PredictionResultPage from "./PredictionResultPage";
 
-const AUTH_API = "http://localhost:8080";
-const ML_API = "http://127.0.0.1:5000";
+const AUTH_API = process.env.REACT_APP_AUTH_API;
+const ML_API = process.env.REACT_APP_ML_API;
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
